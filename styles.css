@@ -39,8 +39,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
 ul {
   display: flex;
 }
@@ -125,6 +123,7 @@ button:active {
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
+  text-align: center;
   border: none;
   color: #7342d6;
   display: none;
@@ -153,7 +152,7 @@ button:active {
 
 .menu--open {
   max-height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .menu--open .menu__backdrop {
@@ -218,7 +217,7 @@ header {
 
 .header__img--wrapper {
   padding: 20px;
-  z-index: 50;
+  z-index: 2;
 }
 
 .container {
@@ -253,7 +252,7 @@ HIGHLIGHTS
 
 #highlights:after,
 #highlights:before {
-  background: url('assets/wave.svg');
+  background: url('assets/wave\ \(1\).svg');
   content: "";
   position: absolute;
   width: 101vw;
@@ -265,6 +264,7 @@ HIGHLIGHTS
 }
 
 #highlights:before {
+  position: absolute;
   transform: translateY(-100%);
   top: 1px;
 }
